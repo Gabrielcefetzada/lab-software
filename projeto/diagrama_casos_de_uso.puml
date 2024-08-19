@@ -1,0 +1,9 @@
+@startuml
+Admin --> (Cadastra Curso)
+Aluno --> (Matricula em Disciplinas Obrigatórias) : inlcude (Verifica se o aluno pode se matricular)
+Aluno --> (Matricula em Disciplinas Alternativas) : inlcude (Verifica se o aluno pode se matricular)
+Aluno --> (Verifica disciplinas ativas) : include (Checa se tem pelo menos 3 alunos matriculados) : include (Checa se a discplina está cheia)
+Professor --> (Consulta lista de alunos)
+Aluno --> (Acessa disciplinas disponíveis)
+Sistema --> (Recebe notificações de Matrícula)
+@enduml
